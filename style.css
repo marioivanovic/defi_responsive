@@ -4,3 +4,28 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    background: #5894d9;
+}
+
+header{
+    background: #b3d5ff;
+}
+
+.container_content{
+    background: #e8ecef;
+}
+
+.container_signup{
+    background: #d6e8fe;
+}
+
+.container_first_feature{
+    background: #f5cd8c;
+}
+.container_second_feature{
+    background: #c9c5fa;
+}
+.container_third_feature{
+background: #f0999c;
+}
