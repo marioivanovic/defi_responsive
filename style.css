@@ -4,28 +4,139 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-wrap: column wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.global{
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .navbar{
     background: #5894d9;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
 }
-
 header{
+    height: 100px;
+    width: 100%;
+    justify-content: center;
     background: #b3d5ff;
 }
-
 .container_content{
     background: #e8ecef;
+    height: 400px;
+    width: 100%;
+    order: 2;
 }
 
 .container_signup{
     background: #d6e8fe;
+    height: 100px;
+    width: 100%;
+    order: 3;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: center;
 }
 
 .container_first_feature{
     background: #f5cd8c;
+    height: 100%;
+    width: 100%;
+    order: 4;
 }
 .container_second_feature{
     background: #c9c5fa;
+    height: 100%;
+    width: 100%;
+    order: 5;
 }
 .container_third_feature{
-background: #f0999c;
+    background: #f0999c;
+    height: 100%;
+    width: 100%;
+    order: 6;
+    }
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 1180px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   body{
+        display: flex;
+        flex-wrap: column wrap;
+        width: 100%;
+    }
+    .global{
+        width: 100%;
+    }
+    .navbar{
+        background: #5894d9;
+        height: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    header{
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+        background: #b3d5ff;
+    }
+    .container_content{
+        background: #e8ecef;
+        height: 100px;
+        width: 100%;
+        order: 2;
+    }
+    
+    .container_signup{
+        background: #d6e8fe;
+        height: 100px;
+        width: 100%;
+        order: 3;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: center;
+    }
+    
+    .container_first_feature{
+        background: #f5cd8c;
+        height: 100%;
+        width: 100%;
+        order: 4;
+    }
+    .container_second_feature{
+        background: #c9c5fa;
+        height: 100%;
+        width: 100%;
+        order: 5;
+    }
+    .container_third_feature{
+        background: #f0999c;
+        height: 100%;
+        width: 100%;
+        order: 6;
+        }
 }
